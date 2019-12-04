@@ -1,0 +1,17 @@
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    display: flex;
+    min-height: 800px;
+}
+#left {
+    color: darkslategrey;
+    cursor: pointer;
+}
+#main {
+    flex: 1 0 auto;
+}

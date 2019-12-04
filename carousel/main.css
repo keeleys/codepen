@@ -1,0 +1,44 @@
+body,
+ul,
+li,
+img {
+  margin: 0px;
+  padding: 0px;
+}
+#content {
+  max-width: 800px;
+  margin: auto;
+}
+.imgs {
+  white-space: nowrap;
+  overflow: hidden;
+  /* 防止 */
+  font-size: 0px;
+}
+.imgs li {
+  list-style: none;
+  transition: all 1s;
+  display: inline-block;
+  vertical-align: top;
+}
+.imgs li img {
+  width: 800px;
+  display: block;
+}
+.points {
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+  margin: auto;
+  margin-top: -10vh;
+}
+.point {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: black;
+  box-shadow: 0px 0px 4px 2px #fff;
+}
+.point-active {
+  background: orange;
+}

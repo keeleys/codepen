@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="left">
+        <ol>
+          <li data-module="carousel">h5轮播图,js+css</li>
+        </ol>
+      </div>
+      <div id="main">
+        <iframe id="iframe_content" src="carousel/index.html" width="100%"></iframe>
+      </div>
+    </div>
+    <script>
+        for (const element of document.getElementsByTagName("li")){
+            let src = element.dataset.module;
+            document.getElementById("iframe_content").src = src + "/index.html";
+        }
+    </script>
+  </body>
+</html>
