@@ -1,7 +1,5 @@
 body,
-ul,
-li,
-img {
+ul {
   margin: 0px;
   padding: 0px;
 }
@@ -12,7 +10,7 @@ img {
 .imgs {
   white-space: nowrap;
   overflow: hidden;
-  /* 防止 */
+  /* 防止inner_block之间的空白 */
   font-size: 0px;
 }
 .imgs li {
